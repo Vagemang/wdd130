@@ -6,57 +6,65 @@
     --accent2-color: #BDE0FE;       /* light blue */
     --heading-font: "Bungee", sans-serif;
     --body-font: "Open Sans", sans-serif;
-  }
-  
-  /* Reset Box Model */
-  * {
+}
+
+/* Reset Box Model */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
+}
+
+/* Body Styling */
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-  }
-  
-  /* Limit Page Width and Center Content */
-  header, main, footer {
+}
+
+/* Limit Page Width and Center Content */
+header, main, footer {
     width: 840px;
     margin: 0 auto;
-  }
-  
-  /* Heading Styling */
-  h1, h2 {
+}
+
+/* Heading Styling */
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-  }
-  
-  /* Basic Margin and Padding for Elements */
-  nav, p, section, article, figure, figcaption {
+}
+
+/* Basic Margin and Padding for Elements */
+nav, p, section, article, figure, figcaption {
     margin: 16px;
     padding: 8px;
-  }
-  
-  /* Remove Underlines from Social Media Links in Footer */
-  .socialmedia a {
+}
+
+/* Remove Underlines from Social Media Links in Footer */
+.socialmedia a {
     text-decoration: none;
-  }
-  
-  /* Hero Section Styles */
-  .hero {
+}
+
+/* Hero Section Styles */
+.hero {
     position: relative;
-  }
-  
-  .hero img {
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .hero h1 {
+}
+
+/* Fix for Absolute Positioning */
+.hero h1,
+.hero article {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Ensure hero elements appear over image */
+.hero h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -64,10 +72,10 @@
     opacity: 0.85;
     background-color: var(--accent1-color);
     color: #ffffff;
-  }
-  
-  .hero article {
-    position: absolute;
+}
+
+/* Fix for Floating Image in Hero */
+.hero article {
     bottom: 20px;
     left: 20px;
     right: 20px;
@@ -75,23 +83,31 @@
     padding: 16px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .hero article img {
+}
+
+/* Float hero article image */
+.hero article img {
     float: right;
     width: 125px;
     margin: 0 0 8px 16px;
     border-radius: 4px;
-  }
-  
-  /* Additional styling for figures and captions can be added as needed */
-  figure {
+}
+
+/* Social Media Styling Fix */
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+/* Figures & Captions */
+figure {
     margin: 16px 0;
     text-align: center;
-  }
-  
-  figcaption {
+}
+
+figcaption {
     font-size: 0.9em;
     color: #555;
     margin-top: 8px;
-  }
+}

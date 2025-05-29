@@ -1,40 +1,63 @@
 
 /* Setting the max width for the main section */
 main {
-    max-width: 840px;
-  }
-  
-  /* Styling the aside section */
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #f0f0f0;
-    color: #222;
-    text-align: center;
-  }
-  
-  /* Styling the image inside the aside */
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  /* Removing padding from paragraphs */
-  p {
-    padding: 0;
-  }
-  
-  /* Style the footer */
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-  
+  max-width: 840px;
+}
+
+/* Styling the aside section */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #222;
+  text-align: center;
+}
+
+/* Styling the image inside the aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Styling the images inside main */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Removing padding from paragraphs */
+p {
+  padding: 0;
+}
+
+/* Style the footer */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Fix: Styling for <nav> element */
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Fix: Styling for <nav> anchor links */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+}
+
+/* Fix: Styling for <h1> */
+h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+}
