@@ -1,9 +1,8 @@
-/* CSS Variables */
 :root {
-    --primary-color: #CDB4DB; /* Light purple */
-    --secondary-color: #FFC8DD; /* Soft pink */
-    --accent1-color: #FFAFCC; /* Deep pink */
-    --accent2-color: #BDE0FE; /* Light blue */
+    --primary-color: #3F0071; /* Deep violet for better contrast */
+    --secondary-color: #900C3F; /* Dark red for stronger readability */
+    --accent1-color: #0D47A1; /* Dark blue to improve contrast */
+    --accent2-color: #C0392B; /* Strong warm red for clarity */
     --heading-font: "Bungee", sans-serif;
     --body-font: "Open Sans", sans-serif;
 }
@@ -18,7 +17,7 @@
 /* General Styling */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color); /* Updated to improve readability */
 }
 
 /* Page Width */
@@ -64,12 +63,38 @@ nav a {
     color: #fff;
 }
 
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Deep violet */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--secondary-color); /* Dark red */
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+
+
 /* History Section */
 .history {
-    background-color: var(--accent2-color);
+    background-color: #1B1035; /* Dark navy for strong contrast */
     padding: 24px;
     border-radius: 8px;
+    color: #FFFFFF; /* Ensures all text is fully readable */
 }
+.history h2 {
+    font-size: 2.2rem;
+    color: #FFD700; /* Gold for high contrast */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 
 /* Adventure Section */
 .adventure-grid {
