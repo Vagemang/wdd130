@@ -125,11 +125,13 @@ figcaption {
     width: 32px;
 }
 iframe {
-    max-width: 100%;
+    width: 100%;
+    height: 450px;
+    border: none;
     display: block;
-    margin: 10px auto;
-    border-radius: 10px; /* Example: Adds rounded corners */
+    margin: auto;
 }
+
 .employee-profiles {
     text-align: center;
     padding: 30px;
@@ -137,22 +139,23 @@ iframe {
 
 .profiles {
     display: flex;
-    justify-content: center; /* Center images */
-    gap: 20px; /* Space between images */
-    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 figure {
     text-align: center;
-    width: 250px; /* Ensures uniform layout */
+    width: 250px;
 }
 
 figure img {
-    width: 100%; /* Ensures all images scale */
-    height: 250px; /* Fix height while keeping resolution */
-    object-fit: contain; /* Preserves quality, prevents cropping */
-    border-radius: 10px; /* Smooth corners */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 
 
 
@@ -181,7 +184,7 @@ fieldset {
 }
 
 button {
-    background-color: #0066cc;
+    background-color: #004a99;
     color: white;
     padding: 12px;
     width: 100%;
